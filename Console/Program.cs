@@ -4,25 +4,17 @@ using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace KeyAuth
+namespace HK4X
 {
-    class Program
+        public partial class Login : Form
     {
 
-        /*
-        * 
-        * WATCH THIS VIDEO TO SETUP APPLICATION: https://youtube.com/watch?v=RfDTdiBq4_o
-        * 
-        * READ HERE TO LEARN ABOUT KEYAUTH FUNCTIONS https://github.com/KeyAuth/KeyAuth-CSHARP-Example#keyauthapp-instance-definition
-        *
-        */
-
         public static api KeyAuthApp = new api(
-            name: "",
-            ownerid: "",
-            secret: "",
-            version: "1.0"
-        );
+    name: "SENSIx",
+    ownerid: "mCTK0G1Wpz",
+    secret: "06fc69e8c3c478710e9b3d454d8301c87bb5f30f091d47460bc0476bdebfdf39",
+    version: "1.0"
+);
 
         // This will display how long it took to make a request in ms. The param "type" is for "login", "register", "init", etc... but that is optional, as well as this function. Ideally you can just put Console.WriteLine($"Request took {api.responseTime}"), but either works. 
         // if you would like to use this method, simply put it in any function and pass the param ... ShowResponse("TypeHere");
@@ -33,7 +25,7 @@ namespace KeyAuth
 
         static void Main(string[] args)
         {
-            Console.Title = "Loader";
+            Console.Title = "SENSIx";
             Console.WriteLine("\n\n Connecting..");
             KeyAuthApp.init();
 
